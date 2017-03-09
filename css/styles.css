@@ -184,6 +184,16 @@ a:hover, a:focus {
   padding-bottom: 10px;
 }
 
+.pagination > li > a {
+  color: #000;
+}
+
+.pagination > .active > a {
+  background-color: #2E2528;
+  border-color: #171012;
+}
+
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #ecf0f1;
