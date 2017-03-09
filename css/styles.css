@@ -140,6 +140,10 @@ a:hover, a:focus {
   border-color: #171012;
 }
 
+#chartContainer {
+  margin-top: 20px;
+}
+
 .icon-bar a {
   padding: 16px;
   display: block;
