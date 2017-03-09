@@ -57,7 +57,7 @@ a:hover, a:focus {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #dbffdc;
+  color: #8d777e;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -68,7 +68,7 @@ a:hover, a:focus {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #dbffdc;
+  color: #8d777e;
   background-color: #44ad4c;
 }
 .navbar-default .navbar-toggle {
@@ -89,7 +89,7 @@ a:hover, a:focus {
   color: #ecf0f1;
 }
 .navbar-default .navbar-link:hover {
-  color: #dbffdc;
+  color: #8d777e;
 }
 
 #header {
@@ -188,7 +188,12 @@ a:hover, a:focus {
   color: #000;
 }
 
-.pagination > .active > a {
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
   background-color: #2E2528;
   border-color: #171012;
 }
@@ -200,12 +205,12 @@ a:hover, a:focus {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #dbffdc;
+    color: #8d777e;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #dbffdc;
+    color: #8d777e;
     background-color: #44ad4c;
   }
 }
