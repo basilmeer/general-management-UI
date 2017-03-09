@@ -47,7 +47,7 @@ a:hover, a:focus {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #171012;
+  color: #8d777e;
 }
 .navbar-default .navbar-text {
   color: #ecf0f1;
@@ -94,6 +94,7 @@ a:hover, a:focus {
 
 #header {
     background: #0f0709;
+    border-color: #171012;
     color: #ffffff;
     padding-bottom: 10px;
 }
@@ -129,9 +130,10 @@ a:hover, a:focus {
 
 .icon-bar {
   height: 100vh;
-  width: 70px;
+  width: 120px;
   text-align: center;
   background-color: #2E2528;
+  border-color: #171012;
 }
 
 .icon-bar a {
