@@ -182,7 +182,7 @@ a:hover, a:focus {
 .well:hover {
   background-color: #2e2528;
   color: #fff;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .main-color-bg {
