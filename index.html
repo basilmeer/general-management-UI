@@ -79,46 +79,110 @@
      </div>
 
      <div class="col-md-9 col-md-offset-1"> <!-- Everything's in here a'side' from the side bar -->
+       <div class="row">
+         <div class="col-md-6">
+           <!-- Interactive Highchart.js code here -->
+           <div id="chartContainer"></div>
 
-       <!-- Interact Highchart.js code here -->
-       <div id="chartContainer"></div>
-
-       <script>
-         Highcharts.chart('chartContainer', {
-           title: {
-               text: 'Annual Profit'
-           },
-           subtitle: {
-               text: 'As per records'
-           },
-           yAxis: {
+           <script>
+             Highcharts.chart('chartContainer', {
                title: {
-                   text: 'yAxis Value Title'
-               }
-           },
-           plotOptions: {
-               series: {
-                   pointStart: 100
-               }
-           },
-           series: [{
-               name: 'Value 1',
-               data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
-           }, {
-               name: 'Value 2',
-               data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
-           }, {
-               name: 'Value 3',
-               data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
-           }, {
-               name: 'Value 4',
-               data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
-           }, {
-               name: 'Value 5',
-               data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
-           }]
-       });
-       </script>
+                   text: 'Lorem Ipsum'
+               },
+               subtitle: {
+                   text: 'Example of reports'
+               },
+               yAxis: {
+                   title: {
+                       text: 'yAxis Value Title'
+                   }
+               },
+               plotOptions: {
+                   series: {
+                       pointStart: 100
+                   }
+               },
+               series: [{
+                   name: 'Value 1',
+                   data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+               }, {
+                   name: 'Value 2',
+                   data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
+               }, {
+                   name: 'Value 3',
+                   data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
+               }, {
+                   name: 'Value 4',
+                   data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
+               }, {
+                   name: 'Value 5',
+                   data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
+               }]
+           });
+           </script>
+         </div>
+         <div class="col-md-6">
+           <!-- Interactive Highchart.js code here -->
+           <div id="chartContainer2"></div>
+           <script>
+           Highcharts.chart('chartContainer2', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Lorem Ipsum'
+            },
+            subtitle: {
+              text: 'Example of reports'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                    name: 'Lorem Ipsum',
+                    y: 56.33
+                }, {
+                    name: 'Dolor Sit',
+                    y: 24.03,
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: 'Amit',
+                    y: 10.38
+                }, {
+                    name: 'Consectetur',
+                    y: 4.77
+                }, {
+                    name: 'Adipiscing',
+                    y: 0.91
+                }, {
+                    name: 'Dummy text',
+                    y: 0.2
+                }]
+            }]
+        });
+           </script>
+         </div>
+       </div>
 
 
        <div class="panel panel-default"> <!-- overview.panel.start -->

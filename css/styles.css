@@ -140,7 +140,7 @@ a:hover, a:focus {
   border-color: #171012;
 }
 
-#chartContainer {
+#chartContainer, #chartContainer2 {
   margin-top: 20px;
 }
 
