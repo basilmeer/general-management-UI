@@ -93,9 +93,8 @@
    </nav>
    Navbar end -->
 
-   <!-- Side bar -->
-   <div class="row">
-     <div class="col-md-1">
+   <div class="row" id="pos-row">
+     <div class="col-md-1"> <!-- side.bar.start -->
        <div class="icon-bar">
          <a href="index.html" id="home"><i class="fa fa-dashboard"></i><span id="bar-item">Dashboard</span></a>
          <a class="active" href="sales.html" id="sale"><i class="fa fa-money"></i><span id="bar-item">Sales</span></a>
@@ -104,78 +103,135 @@
          <a href="report.html" id="report"><i class="fa fa-bar-chart"></i><span id="bar-item">Report</span></a>
          <a href="products.html" id="products"><i class="fa fa-tag"></i><span id="bar-item">Products</span></a>
        </div>
-     </div>
-     <div class="col-md-10">
-       <div class="panel panel-default">
-           <div class="panel-heading main-color-bg">
-               <h3 class="panel-title">Recent Sales</h3>
-           </div>
-           <div class="panel-body">
-               <div class="row">
-                   <div class="col-md-12">
-                       <input type="form-control" type="text" placeholder="Filter Posts">
-                       <input type="submit" type="button" class="btn btn-primary main-color-bg">
-                   </div>
-               </div>
-               <br>
-               <table class="table table-striped table-hover">
-                   <tr>
-                       <th>Item</th>
-                       <th>Product no.</th>
-                       <th>Quantity</th>
-                       <th>Timestamp</th>
-                       <th></th>
-                   </tr>
-                   <tr>
-                     <td>Samsung Galaxy S6</td>
-                     <td>MP-16-155785</td>
-                     <td>4</td>
-                     <td>5:15:22 March 9, 2017</td>
-                     <td><a class="btn btn-default" href="#">View Details</a></td>
-                   </tr>
-                       <td>i3 Laptop</td>
-                       <td>LS-45-745582</td>
-                       <td>2</td>
-                       <td>3:55:14 March 9, 2017</td>
-                       <td><a class="btn btn-default" href="#">View Details</a></td>
-                   </tr>
-                   <tr>
-                     <td>Canon Camera</td>
-                     <td>BW-45-742452</td>
-                     <td>3</td>
-                     <td>2:45:21 March 9, 2017</td>
-                     <td><a class="btn btn-default" href="#">View Details</a></td>
-                   </tr>
-               </table>
-               <!-- Pagination -->
-               <div class="text-center">
-                 <ul class="pagination">
-                   <li class="disabled">
-                     <a href="#" aria-label="Previous">
-                       <span aria-hidden="true">&laquo;</span>
-                     </a>
-                   </li>
-                   <li class="active"><a href="#">1</a></li>
-                   <li><a href="#">2</a></li>
-                   <li><a href="#">3</a></li>
-                   <li><a href="#">4</a></li>
-                   <li><a href="#">5</a></li>
-                   <li><a href="#">6</a></li>
-                   <li><a href="#">7</a></li>
-                   <li><a href="#">8</a></li>
-                   <li><a href="#">9</a></li>
-                   <li><a href="#">10</a></li>
-                   <li>
-                     <a href="#" aria-label="Next">
-                       <span aria-hidden="true">&raquo;</span>
-                     </a>
-                   </li>
-                 </ul>
-               </div>
-           </div>
-       </div>
-     </div>
-   <!-- Icon bar end -->
+     </div> <!-- side.bar.end -->
+
+     <div class="col-md-11"> <!-- pos.start -->
+        <div class="sale">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="col-md-4 col-md-offset-3">
+                <form class="navbar-form">
+                  <input type="text" id="search-bar" class="form-control" placeholder="Search for customers and products">
+                </form>
+              </div>
+            </div>
+          </div>
+
+            <div class="row" id="menu-items">
+              <!-- Clickable menu item cards -->
+              <!-- First column -->
+              <div class="col-md-2">
+                <div class="thumbnail">
+                  <img src="images/coffee.jpg" class="img-responsive">
+                  <h5 class="text-center">Cappuccino</h5>
+                </div>
+                <div class="thumbnail">
+                  <img src="images/pepperoni.jpg" class="img-responsive">
+                  <h5 class="text-center">Pepperoni Pizza</h5>
+                </div>
+              </div>
+
+              <!-- Second column -->
+              <div class="col-md-2">
+                <div class="thumbnail">
+                  <img src="images/espresso.jpg" class="img-responsive">
+                  <h5 class="text-center">Espresso</h5>
+                </div>
+                <div class="thumbnail">
+                  <img src="images/burger.jpg" class="img-responsive">
+                  <h5 class="text-center">Salmon Burger</h5>
+                </div>
+              </div>
+
+              <!-- Third column -->
+              <div class="col-md-2">
+                <div class="thumbnail">
+                  <img src="images/mmilkshake.jpg" class="img-responsive">
+                  <h5 class="text-center">Mango Milkshake</h5>
+                </div>
+                <div class="thumbnail">
+                  <img src="images/burgerpizza.jpg" class="img-responsive">
+                  <h5 class="text-center">Burger Pizza</h5>
+                </div>
+              </div>
+
+              <!-- Fourth column -->
+              <div class="col-md-4">
+                <div class="panel">
+                  <div class="panel-body">
+                     <i class="fa fa-user"></i> &nbsp; &nbsp; Add a new customer
+                    <hr>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <span class="text-muted">Qty.</span>
+                        </div>
+                        <div class="col-md-6">
+                          <span class="text-muted">Product</span>
+                        </div>
+                        <div class="col-md-3">
+                          <span class="text-muted">Price</span>
+                        </div>
+                      </div>
+                    <hr>
+                     <div class="row">
+                       <div class="col-md-3">
+                         <strong>1</strong>
+                       </div>
+                       <div class="col-md-6">
+                         Pizza Burger
+                       </div>
+                       <div class="col-md-3">
+                         Rs. 850
+                       </div>
+                     </div>
+
+                     <!--
+                          This feels like such a bad developer
+                          practice but desperate times call for
+                          desperate measures
+                     -->
+
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+
+                     <hr>
+                     <div class="row">
+                       <div class="col-md-3">
+                         <p class="text-muted">Sub-total</p><br>
+                         <p class="text-muted">Tax</p><br>
+                         <p class="text-muted">Discount</p><br>
+                         <h4>Total</h4>
+                       </div>
+                       <div class="col-md-3 col-md-offset-6">
+                         <p class="text-muted">Rs. 850</p><br>
+                         <p class="text-muted">Rs. 0</p><br>
+                         <p class="text-muted">Rs. 0</p><br>
+                         <h4>Rs. 850</h4>
+                       </div>
+                     </div>
+                     <div class="row">
+                       <div class="col-md-6" id="btnCol">
+                         <button class="btn btn-warning btn-block" id="waitBtn"><i class="fa fa-clock-o"></i><br>Wait</button>
+                       </div>
+                       <div class="col-md-6" id="btnCol">
+                         <button class="btn btn-danger btn-block" id="delBtn"><i class="fa fa-trash-o"></i><br>Delete</button>
+                       </div>
+                     </div>
+                     <button class="btn btn-success btn-block" id="payBtn"><i class="fa fa-dollar"></i><br>Pay</button>
+                  </div> <!-- panel body end -->
+                </div>
+              </div>
+            </div>
+          </div> <!-- Menu items end -->
+        </div> <!-- pos.end -->
+
   </div> <!-- sale end -->
 </body>
 </html>
