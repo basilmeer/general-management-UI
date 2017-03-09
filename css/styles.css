@@ -169,6 +169,15 @@ a:hover, a:focus {
   background-color: #ededed;
 }
 
+.panel {
+  margin-top: 30px;
+}
+
+.main-color-bg {
+    background-color: #2E2528 !important;
+    border-color: #171012 !important;
+    color: #ffffff !important;
+}
 
 #menu-items #btnCol {
   padding-right: 0;

@@ -15,8 +15,9 @@
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
   <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
-  </script>
-  <script type="text/javascript" src="js/script.js"></script> -->
+  </script> -->
+  <script src="js/node_modules/Chart.js/src/chart.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 
@@ -104,6 +105,38 @@
          <a href="products.html" id="products"><i class="fa fa-tag"></i><span id="bar-item">Products</span></a>
        </div>
      </div>
+     <div class="col-md-10">
+       <div class="panel panel-default">
+           <div class="panel-heading main-color-bg">
+               <h3 class="panel-title">Daily Overview</h3>
+           </div>
+           <div class="panel-body">
+               <div class="col-md-3">
+                   <div class="well dash-box">
+                       <h2><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 27</h2>
+                       <h4>New Customers</h4>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="well dash-box">
+                       <h2><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> 16</h2>
+                       <h4>Products Sold</h4>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="well dash-box">
+                       <h2><span class="fa fa-truck" aria-hidden="true"></span> 22</h2>
+                       <h4>Deliveries</h4>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="well dash-box">
+                       <h2><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> 5</h2>
+                       <h4>Complaints Registered</h4>
+                   </div>
+               </div>
+           </div>
+         </div>
    <!-- Icon bar end -->
   </div> <!-- sale end -->
 </body>
