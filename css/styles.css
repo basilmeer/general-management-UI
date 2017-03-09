@@ -92,6 +92,10 @@ a:hover, a:focus {
   color: #8d777e;
 }
 
+#menu-items {
+  margin-top: 20px;
+}
+
 #header {
     background: #0f0709;
     border-color: #171012;
@@ -129,7 +133,7 @@ a:hover, a:focus {
 }*/
 
 .icon-bar {
-  height: 100vh;
+  height: 130vh;
   width: 120px;
   text-align: center;
   background-color: #2E2528;
