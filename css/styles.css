@@ -179,6 +179,12 @@ a:hover, a:focus {
   margin-top: 30px;
 }
 
+.well:hover {
+  background-color: #2e2528;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
 .main-color-bg {
     background-color: #2E2528 !important;
     border-color: #171012 !important;
