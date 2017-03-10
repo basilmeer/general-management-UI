@@ -19,11 +19,11 @@ p {
 }
 
 a:link {
-  color: #9ca3a8;
+  color: #fff;
 }
 
 a:hover, a:focus {
-  color: #fff;
+  color: #f4f4f4;
 }
 
 .navbar {

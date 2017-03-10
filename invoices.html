@@ -51,7 +51,7 @@
       </div>
   </header>
 
-   <div class="row">
+   <div class="row"> <!-- main.view.row.start -->
      <div class="col-md-1"> <!-- side.bar.start -->
        <div class="icon-bar">
          <a href="index.html" id="home"><i class="fa fa-dashboard"></i><span id="bar-item">&nbsp;&nbsp;Dashboard</span></a>
@@ -62,8 +62,78 @@
          <a href="products.html" id="products"><i class="fa fa-tag"></i><span id="bar-item">&nbsp;&nbsp;Products</span></a>
        </div>
      </div> <!-- side.bar.end -->
-
-
-   </div> <!-- sale end -->
+     <div class="col-md-9 col-md-offset-1">
+       <div class="panel panel-default"> <!-- panel.start -->
+         <div class="panel-body"> <!-- panel.body.start -->
+           <form> <!-- add.invoice.form.start -->
+             <div class="form-group"> <!-- client.name.form.group.start -->
+               <label for="clientName">Client Name</label>
+               <input type="text" class="form-control" id="clientName" placeholder="Enter name here">
+             </div> <!-- client.name.form.group.end -->
+             <div class="row"> <!-- invoice.details.row.start -->
+               <div class="col-md-3"> <!-- invoice.number.start -->
+                 <div class="form-group">
+                   <label for="invoiceNo">Invoice No.</label>
+                   <input type="text" class="form-control" id="invoiceNo" placeholder="Enter invoice number">
+                 </div>
+               </div> <!-- invoice.number.end -->
+               <div class="col-md-3"> <!-- start.date.start -->
+                 <div class="form-group">
+                   <label for="startDate">Start Date</label>
+                   <input type="text" class="form-control" id="startDate" placeholder="Enter start date">
+                 </div>
+               </div> <!-- start.date.end -->
+               <div class="col-md-3"> <!-- due.date.start -->
+                 <div class="form-group">
+                   <label for="endDate">Due Date</label>
+                   <input type="text" class="form-control" id="dueDate" placeholder="Enter due date">
+                 </div>
+               </div> <!-- due.date.end -->
+               <div class="col-md-3"> <!-- currency.select.start -->
+                 <div class="form-group">
+                   <label for="currency">Currency</label>
+                   <select class="form-control">
+                     <option>Rs.</option>
+                     <option>$</option>
+                     <option>£</option>
+                     <option>¥</option>
+                   </select>
+                 </div>
+               </div> <!-- currency.select.end -->
+             </div> <!-- invoice.details.row.end -->
+          </form> <!-- add.invoice.form.end -->
+         </div> <!-- panel-body.end -->
+       </div> <!-- panel.end -->
+       <div class="panel panle-default">
+         <div class="panel-heading main-color-bg">
+           Add Product
+         </div>
+         <div class="panel-body">
+           <table class="table table-striped"> <!-- add.product.table.start -->
+             <tr>
+               <th>Sr. No.</th>
+               <th>Product</th>
+               <th>Product No.</th>
+               <th>Price</th>
+               <th>Quantity</th>
+               <th>Discount</th>
+               <th>Subtotal</th>
+               <th><!-- for delete button --></th>
+             </tr>
+             <tr>
+               <td>1</td>
+               <td>Samsung Galaxy S6</td>
+               <td>MP-16-155785</td>
+               <td>37,000</td>
+               <td>0</td>
+               <td><input type="text" class="form-control"></td>
+               <td>37,000</td>
+               <td><a class="btn btn-danger" href="#">Delete</a></td>
+             </tr>
+           </table> <!-- add.product.table-end -->
+         </div>
+       </div>
+     </div> <!-- col-md-9.end -->
+   </div> <!-- main.view.row.end -->
 </body>
 </html>
