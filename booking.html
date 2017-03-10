@@ -70,10 +70,62 @@
        </div>
      </div> <!-- side.bar.end -->
      <div class="col-md-9 col-md-offset-1">
+       <div class="panel panel-default">
+         <div class="panel-heading main-color-bg">
+           Recent Bookings
+         </div>
+           <table class="table table-striped table-hover">
+             <tr>
+               <th>Sr. No.</th>
+               <th>Client Name</th>
+               <th>Timestamp</th>
+               <th>Location</th>
+               <th></th>
+             </tr>
+             <tr>
+               <td>1</td>
+               <td>John Doe</td>
+               <td>5:15:22 March 9, 2017</td>
+               <td>Office</td>
+               <td><a class="btn btn-primary main-color-bg" href="#">View Details</a></td>
+             </tr>
+               <td>2</td>
+               <td>Marilyn Monroe</td>
+               <td>3:55:14 March 9, 2017</td>
+               <td>Office 3</td>
+               <td><a class="btn btn-primary main-color-bg" href="#">View Details</a></td>
+             </tr>
+             <tr>
+               <td>3</td>
+               <td>Anakin Skywalker</td>
+               <td>2:45:21 March 9, 2017</td>
+               <td>Office 2</td>
+               <td><a class="btn btn-primary main-color-bg" href="#">View Details</a></td>
+             </tr>
+           </table>
+           <div class="text-center"> <!-- panel.pagination.start -->
+             <ul class="pagination">
+               <li class="disabled">
+                 <a href="#" aria-label="Previous">
+                   <span aria-hidden="true">&laquo;</span>
+                 </a>
+               </li>
+               <li class="active"><a href="#">1</a></li>
+               <li><a href="#">2</a></li>
+               <li><a href="#">3</a></li>
+               <li><a href="#">4</a></li>
+               <li>
+                 <a href="#" aria-label="Next">
+                   <span aria-hidden="true">&raquo;</span>
+                 </a>
+               </li>
+             </ul>
+           </div> <!-- panels-pagination.end -->
+       </div>
        <div class="panel panel-default"> <!-- panel.start -->
          <div class="panel-body"> <!-- panel.body.start -->
            <form> <!-- add.booking.form.start -->
-             <div class="form-group"> <!-- client.name.form.group.start -->
+             <div class="form-group`"> <!-- client.name.form.group.start -->
                <label for="clientName">Client Name</label>
                <input type="text" class="form-control" id="clientName" placeholder="Enter name here">
              </div> <!-- client.name.form.group.end -->
