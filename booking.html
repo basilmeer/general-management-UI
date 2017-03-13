@@ -8,18 +8,11 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" >
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
-  <!-- Do NOT remove -->
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  </script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
-
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -57,18 +50,32 @@
       </div>
     </div>
   </header>
+
    <!-- Side bar -->
-   <div class="row">
-     <div class="col-md-1">
-       <div class="icon-bar">
+   <div class="row" id="mainviewrow"> <!-- mainviewrow.start -->
+     <div class="col-md-1"> <!-- mainviewrow.col.start -->
+       <div class="icon-bar"> <!-- icon-bar.start -->
          <a href="index.html" id="home"><i class="fa fa-dashboard"></i><span id="bar-item">&nbsp;&nbsp;Dashboard</span></a>
-         <a href="inventory.html" id="sale"><i class="fa fa-barcode"></i><span id="bar-item">&nbsp;&nbsp;Inventory</span></a>
+         <a href="#" id="inventory"><i class="fa fa-barcode"></i><span id="bar-item">&nbsp;&nbsp;Inventory</span></a>
+           <!-- inventory tree-view -->
+           <a href="inventory.html" id="view-inventory"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-inventory"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
          <a href="history.html" id="history"><i class="fa fa-files-o"></i><span id="bar-item">&nbsp;&nbsp;History</span></a>
-         <a class="active" href="booking.html" id="booking"><i class="fa fa-book"></i><span id="bar-item">&nbsp;&nbsp;Booking</span></a>
-         <a href="invoices.html" id="report"><i class="fa fa-file-text-o"></i><span id="bar-item">&nbsp;&nbsp;Invoices</span></a>
-         <a href="products.html" id="products"><i class="fa fa-tag"></i><span id="bar-item">&nbsp;&nbsp;Products</span></a>
+         <a class="active" href="#" id="booking"><i class="fa fa-book"></i><span id="bar-item">&nbsp;&nbsp;Booking</span></a>
+           <!-- booking tree-view -->
+           <a href="booking.html" id="view-booking"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-booking"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+         <a href="#" id="invoices"><i class="fa fa-file-text-o"></i><span id="bar-item">&nbsp;&nbsp;Invoices</span></a>
+           <!-- invoices tree-view -->
+           <a href="invoices.html" id="view-invoices"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-invoices"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+         <a href="#" id="products"><i class="fa fa-tag"></i><span id="bar-item">&nbsp;&nbsp;Products</span></a>
+           <!-- products tree-view -->
+           <a href="products.html" id="view-products"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-products"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
        </div>
      </div> <!-- side.bar.end -->
+
      <div class="col-md-9 col-md-offset-1">
        <div class="panel panel-default">
          <div class="panel-heading main-color-bg">
