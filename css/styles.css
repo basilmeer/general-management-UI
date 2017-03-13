@@ -124,7 +124,13 @@ a:hover, a:focus {
 }
 
 #mainviewrow .icon-bar #view-inventory,
-#mainviewrow .icon-bar #add-inventory {
+#mainviewrow .icon-bar #add-inventory,
+#mainviewrow .icon-bar #view-booking,
+#mainviewrow .icon-bar #add-booking,
+#mainviewrow .icon-bar #view-invoices,
+#mainviewrow .icon-bar #add-invoices,
+#mainviewrow .icon-bar #view-products,
+#mainviewrow .icon-bar #add-products {
   background-color: #0f0709;
 }
 

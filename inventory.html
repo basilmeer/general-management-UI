@@ -34,7 +34,10 @@
      <div id="navbar" class="collapse navbar-collapse">
        <ul class="nav navbar-nav">
          <li><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
-         <li class="active"><a href="inventory.html"><i class="fa fa-barcode"></i></a></li>
+         <a href="#" id="inventory" class="active"><i class="fa fa-barcode"></i><span id="bar-item">&nbsp;&nbsp;Inventory</span></a>
+          <!-- inventory tree-view -->
+           <a href="#" id="view-inventory"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-inventory"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
          <li><a href="history.html"><i class="fa fa-files-o"></i></a></li>
          <li><a href="booking.html"><i class="fa fa-book"></i></a></li>
          <li><a href="invoices.html"><i class="fa fa-file-text-o"></i></a></li>
@@ -58,7 +61,7 @@
    </div>
  </header>
 
- <div class="row"> <!-- main.view.row.start -->
+ <div class="row" id="mainviewrow"> <!-- main.view.row.start -->
    <div class="col-md-1"> <!-- side.bar.start -->
      <div class="icon-bar">
        <a href="index.html" id="home"><i class="fa fa-dashboard"></i><span id="bar-item">&nbsp;&nbsp;Dashboard</span></a>
