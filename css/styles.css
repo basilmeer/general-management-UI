@@ -115,23 +115,6 @@ a:hover, a:focus {
     border-radius: 4px;
 }
 
-/*.navbar {
-  margin: 0;
-  border-radius: 0;
-  background-color: #2E2528;
-  border: 0px;
-}
-
-.nav > li > a:visited  {
-  background-color: #171012;
-  color: #9ca3a8;
-}
-
-.nav > li > a:hover {
-  background-color: #171012;
-  color: #ffffff;
-}*/
-
 .icon-bar {
   height: 180vh;
   width: 120px;
@@ -144,7 +127,6 @@ a:hover, a:focus {
 #mainviewrow .icon-bar #add-inv {
   background-color: #0f0709;
 }
-
 
 #chartContainer, #chartContainer2 {
   margin-top: 20px;
