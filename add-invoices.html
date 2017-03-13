@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invoices</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" >
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <script src="js/jquery-3.1.1.js"></script> <!-- jQuery -->
+  <script src= "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script> <!-- jQuery UI (for effects) -->
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Company Name Here</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+          <li><a href="inventory.html"><i class="fa fa-barcode"></i></a></li>
+          <li><a href="history.html"><i class="fa fa-files-o"></i></a></li>
+          <li><a href="booking.html"><i class="fa fa-book"></i></a></li>
+          <li class="active"><a href="invoices.html"><i class="fa fa-file-text-o"></i></a></li>
+          <li><a href="products.html"><i class="fa fa-tag"></i></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Welcome, User</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAVBAR END -->
+
+  <header id="header">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-10">
+                  <h2><span class="fa fa-barcode" aria-hidden="true"></span> Invoices <small>Create, edit, delete invoices</small></h2>
+              </div>
+          </div>
+      </div>
+  </header>
+
+   <div class="row" id="mainviewrow"> <!-- main.view.row.start -->
+     <div class="col-md-1"> <!-- side.bar.start -->
+       <div class="icon-bar">
+         <a href="index.html" id="home"><i class="fa fa-dashboard"></i><span id="bar-item">&nbsp;&nbsp;Dashboard</span></a>
+         <a href="#" id="inventory"><i class="fa fa-barcode"></i><span id="bar-item">&nbsp;&nbsp;Inventory</span></a>
+          <!-- inventory tree-view -->
+           <a href="inventory.html" id="view-inventory"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-inventory"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+         <a href="history.html" id="history"><i class="fa fa-files-o"></i><span id="bar-item">&nbsp;&nbsp;History</span></a>
+         <a href="#" id="booking"><i class="fa fa-book"></i><span id="bar-item">&nbsp;&nbsp;Booking</span></a>
+           <!-- booking tree-view -->
+           <a href="booking.html" id="view-booking"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-booking"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+         <a class="active" href="#" id="invoices"><i class="fa fa-file-text-o"></i><span id="bar-item">&nbsp;&nbsp;Invoices</span></a>
+           <!-- invoices tree-view -->
+           <a href="invoices.html" id="view-invoices"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-invoices"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+         <a href="#" id="products"><i class="fa fa-tag"></i><span id="bar-item">&nbsp;&nbsp;Products</span></a>
+           <!-- products tree-view -->
+           <a href="products.html" id="view-products"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-products"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+       </div>
+     </div> <!-- side.bar.end -->
+     <div class="col-md-9 col-md-offset-1">
+       <div class="panel panel-default"> <!-- panel.start -->
+         <div class="panel-body"> <!-- panel.body.start -->
+           <form> <!-- add.invoice.form.start -->
+             <div class="form-group"> <!-- client.name.form.group.start -->
+               <label for="clientName">Client Name</label>
+               <input type="text" class="form-control" id="clientName" placeholder="Enter name here">
+             </div> <!-- client.name.form.group.end -->
+             <div class="row"> <!-- invoice.details.row.start -->
+               <div class="col-md-3"> <!-- invoice.number.start -->
+                 <div class="form-group">
+                   <label for="invoiceNo">Invoice No.</label>
+                   <input type="text" class="form-control" id="invoiceNo" placeholder="Enter invoice number">
+                 </div>
+               </div> <!-- invoice.number.end -->
+               <div class="col-md-3"> <!-- start.date.start -->
+                 <div class="form-group">
+                   <label for="startDate">Start Date</label>
+                   <input type="text" class="form-control" id="startDate" placeholder="Enter start date">
+                 </div>
+               </div> <!-- start.date.end -->
+               <div class="col-md-3"> <!-- due.date.start -->
+                 <div class="form-group">
+                   <label for="endDate">Due Date</label>
+                   <input type="text" class="form-control" id="dueDate" placeholder="Enter due date">
+                 </div>
+               </div> <!-- due.date.end -->
+               <div class="col-md-3"> <!-- currency.select.start -->
+                 <div class="form-group">
+                   <label for="currency">Currency</label>
+                   <select class="form-control">
+                     <option>Rs.</option>
+                     <option>$</option>
+                     <option>£</option>
+                     <option>¥</option>
+                   </select>
+                 </div>
+               </div> <!-- currency.select.end -->
+             </div> <!-- invoice.details.row.end -->
+          </form> <!-- add.invoice.form.end -->
+         </div> <!-- panel-body.end -->
+       </div> <!-- panel.end -->
+       <div class="panel panel-default">
+         <div class="panel-heading main-color-bg">
+           Add Product
+         </div>
+         <div class="panel-body">
+           <table class="table table-striped"> <!-- add.product.table.start -->
+             <tr>
+               <th>Sr. No.</th>
+               <th>Product</th>
+               <th>Product No.</th>
+               <th>Price</th>
+               <th>Quantity</th>
+               <th>Discount</th>
+               <th>Subtotal</th>
+               <th><!-- for delete button --></th>
+             </tr>
+             <tr>
+               <td>1</td>
+               <td><input type="text" class="form-control"></td>
+               <td><input type="text" class="form-control"></td>
+               <td><input type="text" class="form-control"></td>
+               <td><input type="text" class="form-control"></td>
+               <td><input type="text" class="form-control"></td>
+               <td>0</td>
+               <td><a class="btn btn-danger" href="#">Delete</a></td>
+             </tr>
+           </table> <!-- add.product.table-end -->
+           <div class="form-group">
+             <label for="invDesc">Description</label>
+             <textarea class="form-control" id="invDesc" rows=5></textarea>
+           </div>
+           <div class="form-group">
+             <label for="addNote">Additional Note</label>
+             <textarea class="form-control" id="addNote" rows=5></textarea>
+           </div>
+           <button type="submit" class="btn btn-success pull-right">Submit</button>
+         </div>
+       </div>
+     </div> <!-- col-md-9.end -->
+   </div> <!-- main.view.row.end -->
+</body>
+</html>
