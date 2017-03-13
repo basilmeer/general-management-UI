@@ -71,13 +71,23 @@
        <div class="icon-bar"> <!-- icon-bar.start -->
          <!-- I have a feeling this can be refactored; this code was carried from my other repo so yeah -->
          <a class="active" href="index.html" id="home"><i class="fa fa-dashboard"></i><span id="bar-item">&nbsp;&nbsp;Dashboard</span></a>
-         <a href="#" id="sale"><i class="fa fa-barcode"></i><span id="bar-item">&nbsp;&nbsp;Inventory</span></a>
-         <a href="#" id="view-inv"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
-         <a href="#" id="add-inv"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+         <a href="#" id="inventory"><i class="fa fa-barcode"></i><span id="bar-item">&nbsp;&nbsp;Inventory</span></a>
+          <!-- inventory tree-view -->
+           <a href="#" id="view-inventory"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-inventory"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
          <a href="history.html" id="history"><i class="fa fa-files-o"></i><span id="bar-item">&nbsp;&nbsp;History</span></a>
-         <a href="booking.html" id="booking"><i class="fa fa-book"></i><span id="bar-item">&nbsp;&nbsp;Booking</span></a>
+         <a href="" id="booking"><i class="fa fa-book"></i><span id="bar-item">&nbsp;&nbsp;Booking</span></a>
+          <!-- booking tree-view -->
+           <a href="#" id="view-booking"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-booking"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
          <a href="invoices.html" id="report"><i class="fa fa-file-text-o"></i><span id="bar-item">&nbsp;&nbsp;Invoices</span></a>
+          <!-- invoices tree-view -->
+           <a href="#" id="view-invoices"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-invoices"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
          <a href="products.html" id="products"><i class="fa fa-tag"></i><span id="bar-item">&nbsp;&nbsp;Products</span></a>
+          <!-- products tree-view -->
+           <a href="#" id="view-products"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+           <a href="#" id="add-products"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
        </div> <!-- icon-bar.end -->
      </div> <!-- main.view.col.end -->
 
@@ -228,9 +238,9 @@
          </div> <!-- panel.body.end -->
        </div> <!-- overview.panel.end -->
 
-       <div class="panel panel-default"> <!-- recent.sales.panel.start -->
+       <div class="panel panel-default"> <!-- recent.inventorys.panel.start -->
          <div class="panel-heading main-color-bg">
-           <h3 class="panel-title">Recent Sales</h3>
+           <h3 class="panel-title">Recent inventorys</h3>
          </div>
 
          <div class="panel-body">

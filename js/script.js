@@ -1,9 +1,12 @@
 $(document).ready(function() {
-  $('#view-inv').hide();
-  $('#add-inv').hide();
+  $('#view-inventory').hide();
+  $('#add-inventory').hide();
   $('#sale').click(function(){
     $('#add-inv').slideToggle('slow');
     $('#view-inv').slideToggle('slow');
-    console.log("Working");
+  })
+  $('#booking').click(function() {
+    $('add-booking').slideToggle('slow');
+    $('view-booking').slideToggle('slow');
   })
 })
