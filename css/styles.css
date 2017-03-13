@@ -140,6 +140,12 @@ a:hover, a:focus {
   border-color: #171012;
 }
 
+#mainviewrow .icon-bar #view-inv,
+#mainviewrow .icon-bar #add-inv {
+  background-color: #0f0709;
+}
+
+
 #chartContainer, #chartContainer2 {
   margin-top: 20px;
 }

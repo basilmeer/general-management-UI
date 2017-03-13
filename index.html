@@ -8,11 +8,12 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" > <!-- Bootstrap -->
   <link href="css/styles.css" rel="stylesheet"> <!-- Custom CSS -->
   <link href="css/font-awesome.min.css" rel="stylesheet"> <!-- FontAwesome -->
-  <script src="js/jquery.3.1.1.js"></script> <!-- jQuery -->
   <script src= "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script> <!-- jQuery UI (for effects) -->
+  <script src="js/jquery-3.1.1.js"></script> <!-- jQuery -->
   <!-- <script src="js/node_modules/chart.js/dist/Chart.js"></script> -->
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
 
@@ -65,18 +66,20 @@
    <!-- Side bar = lets you navigate around different pages,
         kinda the same thing as the navbar except
         filles up space really nicely -->
-   <div class="row"> <!-- main.view.row.start -->
-     <div class="col-md-1">
-       <div class="icon-bar">
+   <div class="row" id="mainviewrow"> <!-- main.view.row.start -->
+     <div class="col-md-1"> <!-- main.view.col.start -->
+       <div class="icon-bar"> <!-- icon-bar.start -->
          <!-- I have a feeling this can be refactored; this code was carried from my other repo so yeah -->
          <a class="active" href="index.html" id="home"><i class="fa fa-dashboard"></i><span id="bar-item">&nbsp;&nbsp;Dashboard</span></a>
-         <a href="inventory.html" id="sale"><i class="fa fa-barcode"></i><span id="bar-item">&nbsp;&nbsp;Inventory</span></a>
+         <a href="#" id="sale"><i class="fa fa-barcode"></i><span id="bar-item">&nbsp;&nbsp;Inventory</span></a>
+         <a href="#" id="view-inv"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+         <a href="#" id="add-inv"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
          <a href="history.html" id="history"><i class="fa fa-files-o"></i><span id="bar-item">&nbsp;&nbsp;History</span></a>
          <a href="booking.html" id="booking"><i class="fa fa-book"></i><span id="bar-item">&nbsp;&nbsp;Booking</span></a>
          <a href="invoices.html" id="report"><i class="fa fa-file-text-o"></i><span id="bar-item">&nbsp;&nbsp;Invoices</span></a>
          <a href="products.html" id="products"><i class="fa fa-tag"></i><span id="bar-item">&nbsp;&nbsp;Products</span></a>
-       </div>
-     </div>
+       </div> <!-- icon-bar.end -->
+     </div> <!-- main.view.col.end -->
 
      <div class="col-md-9 col-md-offset-1"> <!-- Everything's in here a'side' from the side bar -->
        <div class="row">
