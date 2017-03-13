@@ -123,8 +123,8 @@ a:hover, a:focus {
   border-color: #171012;
 }
 
-#mainviewrow .icon-bar #view-inv,
-#mainviewrow .icon-bar #add-inv {
+#mainviewrow .icon-bar #view-inventory,
+#mainviewrow .icon-bar #add-inventory {
   background-color: #0f0709;
 }
 
