@@ -1,5 +1,5 @@
 body {
- background: url('../images/login.jpeg') no-repeat center center fixed;
+ background: url('../images/loginbg.jpg') no-repeat center center fixed;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
@@ -12,4 +12,9 @@ body {
 }
 .form-group.last {
  margin-bottom:0px;
+}
+
+#brand-logo {
+  position: relative;
+  right: -250px;
 }
