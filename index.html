@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE-Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard</title>
+  <title>BookIt | Dashboard</title>
   <link href="css/bootstrap.min.css" rel="stylesheet" > <!-- Bootstrap -->
   <link href="css/styles.css" rel="stylesheet"> <!-- Custom CSS -->
   <link href="css/font-awesome.min.css" rel="stylesheet"> <!-- FontAwesome -->
@@ -14,10 +14,11 @@
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
   <script src="js/script.js"></script>
+  <link rel="icon" href="images/fav.ico"> <!-- Adds locally stored favicon -->
 </head>
 <body>
 
-<!-- NavBar = The thing at the top of the page that lets you navigate around -->
+  <!-- NavBar = The thing at the top of the page that lets you navigate around -->
   <nav class="navbar navbar-default"> <!-- nav.bar.start -->
     <div class="container-fluid">
       <!-- This works when the screen's small; doesn't 'work' the way it's intended to, though. Will fix later. -->
@@ -28,21 +29,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Company Name Here</a>
+        <a class="navbar-brand" href="#">BookIt</a>
       </div> <!-- Small menu icon ends here -->
 
       <!-- Actual nav-bar that you see at the top of a screen on a normal screen -->
       <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <!-- Navigation buttons in the navbar that do the same stuff as the side bar
-               but they're in icon form -->
-          <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
-          <li><a href="inventory.html"><i class="fa fa-barcode"></i></a></li>
-          <li><a href="history.html"><i class="fa fa-files-o"></i></a></li>
-          <li><a href="booking.html"><i class="fa fa-book"></i></a></li>
-          <li><a href="invoices.html"><i class="fa fa-file-text-o"></i></a></li>
-          <!-- <li><a href="products.html"><i class="fa fa-tag"></i></a></li> -->
-        </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Welcome, User</a></li>
           <li><a href="#">Logout</a></li>
@@ -52,7 +43,7 @@
   </nav> <!-- nav.bar.end -->
 
   <!-- Displays the name of the page
-       and a short description -->
+  and a short description -->
   <header id="header"> <!-- header.start -->
     <div class="container">
       <div class="row">
@@ -63,245 +54,242 @@
     </div>
   </header> <!-- header.end -->
 
-   <!-- Side bar = lets you navigate around different pages,
-        kinda the same thing as the navbar except
-        filles up space really nicely -->
-   <div class="row" id="mainviewrow"> <!-- main.view.row.start -->
-     <div class="col-md-1"> <!-- main.view.col.start -->
-       <div class="icon-bar"> <!-- icon-bar.start -->
-         <!-- I have a feeling this can be refactored; this code was carried from my other repo so yeah -->
-         <a class="active" href="index.html" id="home"><i class="fa fa-dashboard"></i><span id="bar-item">&nbsp;&nbsp;Dashboard</span></a>
-         <a href="#" id="inventory"><i class="fa fa-barcode"></i><span id="bar-item">&nbsp;&nbsp;Inventory</span></a>
-          <!-- inventory tree-view -->
-           <a href="view-inventory.html" id="view-inventory"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
-           <a href="add-inventory.html" id="add-inventory"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
-         <a href="history.html" id="history"><i class="fa fa-files-o"></i><span id="bar-item">&nbsp;&nbsp;History</span></a>
-         <a href="#" id="booking"><i class="fa fa-book"></i><span id="bar-item">&nbsp;&nbsp;Booking</span></a>
-          <!-- booking tree-view -->
-           <a href="view-booking.html" id="view-booking"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
-           <a href="add-booking.html" id="add-booking"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
-         <a href="#" id="invoices"><i class="fa fa-file-text-o"></i><span id="bar-item">&nbsp;&nbsp;Invoices</span></a>
-          <!-- invoices tree-view -->
-           <a href="view-invoices.html" id="view-invoices"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
-           <a href="add-invoices.html" id="add-invoices"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
-         <!-- <a href="#" id="products"><i class="fa fa-tag"></i><span id="bar-item">&nbsp;&nbsp;Products</span></a> -->
-          <!-- products tree-view -->
-           <!-- <a href="view-products.html" id="view-products"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
-           <a href="add-products.html" id="add-products"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a> -->
-       </div> <!-- icon-bar.end -->
-     </div> <!-- main.view.col.end -->
+  <!-- Side bar = lets you navigate around different pages,
+  kinda the same thing as the navbar except
+  filles up space really nicely -->
+  <div class="row" id="mainviewrow"> <!-- main.view.row.start -->
+    <div class="col-md-1"> <!-- main.view.col.start -->
+      <div class="icon-bar"> <!-- icon-bar.start -->
+        <!-- I have a feeling this can be refactored; this code was carried from my other repo so yeah -->
+        <a class="active" href="index.html" id="home"><i class="fa fa-dashboard"></i><span id="bar-item">&nbsp;&nbsp;Dashboard</span></a>
+        <a href="#" id="inventory"><i class="fa fa-barcode"></i><span id="bar-item">&nbsp;&nbsp;Inventory</span></a>
+        <!-- inventory tree-view -->
+        <a href="view-inventory.html" id="view-inventory"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+        <a href="add-inventory.html" id="add-inventory"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+        <a href="history.html" id="history"><i class="fa fa-files-o"></i><span id="bar-item">&nbsp;&nbsp;History</span></a>
+        <a href="#" id="booking"><i class="fa fa-book"></i><span id="bar-item">&nbsp;&nbsp;Booking</span></a>
+        <!-- booking tree-view -->
+        <a href="view-booking.html" id="view-booking"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+        <a href="add-booking.html" id="add-booking"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+        <a href="#" id="invoices"><i class="fa fa-file-text-o"></i><span id="bar-item">&nbsp;&nbsp;Invoices</span></a>
+        <!-- invoices tree-view -->
+        <a href="view-invoices.html" id="view-invoices"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+        <a href="add-invoices.html" id="add-invoices"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+        <!-- <a href="#" id="products"><i class="fa fa-tag"></i><span id="bar-item">&nbsp;&nbsp;Products</span></a> -->
+        <!-- products tree-view -->
+        <!-- <a href="view-products.html" id="view-products"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+        <a href="add-products.html" id="add-products"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a> -->
+      </div> <!-- icon-bar.end -->
+    </div> <!-- main.view.col.end -->
 
-     <div class="col-md-9 col-md-offset-1"> <!-- Everything's in here a'side' from the side bar -->
-       <div class="row">
-         <div class="col-md-6">
-           <!-- Interactive Highchart.js code here -->
-           <div id="chartContainer"></div>
-
-           <script>
-             Highcharts.chart('chartContainer', {
-               title: {
-                   text: 'Lorem Ipsum'
-               },
-               subtitle: {
-                   text: 'Example of invoicess'
-               },
-               yAxis: {
-                   title: {
-                       text: 'yAxis Value Title'
-                   }
-               },
-               plotOptions: {
-                   series: {
-                       pointStart: 100
-                   }
-               },
-               series: [{
-                   name: 'Value 1',
-                   data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
-               }, {
-                   name: 'Value 2',
-                   data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
-               }, {
-                   name: 'Value 3',
-                   data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
-               }, {
-                   name: 'Value 4',
-                   data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
-               }, {
-                   name: 'Value 5',
-                   data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
-               }]
-           });
-           </script>
-         </div>
-         <div class="col-md-6">
-           <!-- Interactive Highchart.js code here -->
-           <div id="chartContainer2"></div>
-           <script>
-           Highcharts.chart('chartContainer2', {
+    <div class="col-md-9 col-md-offset-1"> <!-- col-md-9.start -->
+      <div class="row"> <!-- highchart.js row.start -->
+        <div class="col-md-6">
+          <!-- Interactive Highchart.js code here -->
+          <div id="chartContainer"></div>
+          <script>
+          Highcharts.chart('chartContainer', {
+            title: {
+              text: 'Lorem Ipsum'
+            },
+            subtitle: {
+              text: 'Example of invoicess'
+            },
+            yAxis: {
+              title: {
+                text: 'yAxis Value Title'
+              }
+            },
+            plotOptions: {
+              series: {
+                pointStart: 100
+              }
+            },
+            series: [{
+              name: 'Value 1',
+              data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+            }, {
+              name: 'Value 2',
+              data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
+            }, {
+              name: 'Value 3',
+              data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
+            }, {
+              name: 'Value 4',
+              data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
+            }, {
+              name: 'Value 5',
+              data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
+            }]
+          });
+          </script>
+        </div>
+        <div class="col-md-6"> <!-- col-md-6.start -->
+          <div id="chartContainer2"></div>
+          <script>
+          Highcharts.chart('chartContainer2', {
             chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
-                type: 'pie'
+              plotBackgroundColor: null,
+              plotBorderWidth: null,
+              plotShadow: false,
+              type: 'pie'
             },
             title: {
-                text: 'Lorem Ipsum'
+              text: 'Lorem Ipsum'
             },
             subtitle: {
               text: 'Example of invoicess'
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+              pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
             },
             plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: true,
-                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                        style: {
-                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                        }
-                    }
+              pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                  enabled: true,
+                  format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                  style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                  }
                 }
+              }
             },
             series: [{
-                name: 'Brands',
-                colorByPoint: true,
-                data: [{
-                    name: 'Lorem Ipsum',
-                    y: 56.33
-                }, {
-                    name: 'Dolor Sit',
-                    y: 24.03,
-                    sliced: true,
-                    selected: true
-                }, {
-                    name: 'Amit',
-                    y: 10.38
-                }, {
-                    name: 'Consectetur',
-                    y: 4.77
-                }, {
-                    name: 'Adipiscing',
-                    y: 0.91
-                }, {
-                    name: 'Dummy text',
-                    y: 0.2
-                }]
+              name: 'Brands',
+              colorByPoint: true,
+              data: [{
+                name: 'Lorem Ipsum',
+                y: 56.33
+              }, {
+                name: 'Dolor Sit',
+                y: 24.03,
+                sliced: true,
+                selected: true
+              }, {
+                name: 'Amit',
+                y: 10.38
+              }, {
+                name: 'Consectetur',
+                y: 4.77
+              }, {
+                name: 'Adipiscing',
+                y: 0.91
+              }, {
+                name: 'Dummy text',
+                y: 0.2
               }]
-            });
-           </script>
-         </div>
-       </div>
+            }]
+          });
+          </script>
+        </div> <!-- col-md-6.end -->
+      </div> <!-- highcharts.js row.end -->
 
+      <div class="panel panel-default"> <!-- overview.panel.start -->
+        <div class="panel-heading main-color-bg">
+          <h3 class="panel-title">Daily Overview</h3>
+        </div>
 
-       <div class="panel panel-default"> <!-- overview.panel.start -->
-         <div class="panel-heading main-color-bg">
-           <h3 class="panel-title">Daily Overview</h3>
-         </div>
+        <!-- First well -->
+        <div class="panel-body">
+          <div class="col-md-3">
+            <div class="well dash-box">
+              <h2><span class="fa fa-users" aria-hidden="true"></span> 27</h2>
+              <h4>New Customers</h4>
+            </div>
+          </div>
 
-         <!-- First well -->
-         <div class="panel-body">
-           <div class="col-md-3">
-             <div class="well dash-box">
-               <h2><span class="fa fa-users" aria-hidden="true"></span> 27</h2>
-               <h4>New Customers</h4>
-             </div>
-           </div>
+          <!-- Second well -->
+          <div class="col-md-3">
+            <div class="well dash-box">
+              <h2><span class="fa fa-dollar" aria-hidden="true"></span> 16</h2>
+              <h4>Products Sold</h4>
+            </div>
+          </div>
 
-           <!-- Second well -->
-           <div class="col-md-3">
-             <div class="well dash-box">
-               <h2><span class="fa fa-dollar" aria-hidden="true"></span> 16</h2>
-               <h4>Products Sold</h4>
-             </div>
-           </div>
+          <!-- Third well -->
+          <div class="col-md-3">
+            <div class="well dash-box">
+              <h2><span class="fa fa-truck" aria-hidden="true"></span> 22</h2>
+              <h4>Deliveries</h4>
+            </div>
+          </div>
 
-           <!-- Third well -->
-           <div class="col-md-3">
-             <div class="well dash-box">
-               <h2><span class="fa fa-truck" aria-hidden="true"></span> 22</h2>
-               <h4>Deliveries</h4>
-             </div>
-           </div>
+          <!-- Fourth well -->
+          <div class="col-md-3">
+            <div class="well dash-box">
+              <h2><span class="fa fa-warning" aria-hidden="true"></span> 5</h2>
+              <h4>Low Stock</h4>
+            </div>
+          </div>
+        </div> <!-- panel.body.end -->
+      </div> <!-- overview.panel.end -->
 
-           <!-- Fourth well -->
-           <div class="col-md-3">
-             <div class="well dash-box">
-               <h2><span class="fa fa-warning" aria-hidden="true"></span> 5</h2>
-               <h4>Low Stock</h4>
-             </div>
-           </div>
-         </div> <!-- panel.body.end -->
-       </div> <!-- overview.panel.end -->
+      <div class="panel panel-default"> <!-- recent.inventories.panel.start -->
+        <div class="panel-heading main-color-bg">
+          <h3 class="panel-title">Recent Inventories</h3>
+        </div>
 
-       <div class="panel panel-default"> <!-- recent.inventorys.panel.start -->
-         <div class="panel-heading main-color-bg">
-           <h3 class="panel-title">Recent inventorys</h3>
-         </div>
+        <div class="panel-body"> <!-- panel-body.start -->
+          <div class="row"> <!-- filter.search.bar.start -->
+            <div class="col-md-12">
+              <input type="form-control" type="text" placeholder="Filter Posts">
+              <input type="submit" type="button" class="btn btn-primary main-color-bg">
+            </div>
+          </div> <!-- filter.search.bar.end -->
 
-         <div class="panel-body">
-           <div class="row"> <!-- filter.search.bar.start -->
-             <div class="col-md-12">
-               <input type="form-control" type="text" placeholder="Filter Posts">
-               <input type="submit" type="button" class="btn btn-primary main-color-bg">
-             </div>
-           </div> <!-- filter.search.bar.end -->
+          <br>
 
-           <br> <!-- brrrrr it's cold -->
-
-           <table class="table table-striped table-hover">
-             <tr>
-               <th>Item</th>
-               <th>Product no.</th>
-               <th>Quantity</th>
-               <th>Timestamp</th>
-               <th></th>
-             </tr>
-             <tr>
-               <td>Samsung Galaxy S6</td>
-               <td>MP-16-155785</td>
-               <td>4</td>
-               <td>5:15:22 March 9, 2017</td>
-               <td><a class="btn btn-default" href="#">View Details</a></td>
-             </tr>
-               <td>i3 Laptop</td>
-               <td>LS-45-745582</td>
-               <td>2</td>
-               <td>3:55:14 March 9, 2017</td>
-               <td><a class="btn btn-default" href="#">View Details</a></td>
-             </tr>
-             <tr>
-               <td>Canon Camera</td>
-               <td>BW-45-742452</td>
-               <td>3</td>
-               <td>2:45:21 March 9, 2017</td>
-               <td><a class="btn btn-default" href="#">View Details</a></td>
-             </tr>
-           </table>
-           <!-- Pagination -->
-           <div class="text-center">
-             <ul class="pagination">
-               <li class="disabled">
-                 <a href="#" aria-label="Previous">
-                   <span aria-hidden="true">&laquo;</span>
-                 </a>
-               </li>
-               <li class="active"><a href="#">1</a></li>
-               <li><a href="#">2</a></li>
-               <li>
-                 <a href="#" aria-label="Next">
-                   <span aria-hidden="true">&raquo;</span>
-                 </a>
-               </li>
-             </ul>
-           </div> <!-- text-center.pagination.end -->
-         </div> <!-- panel.body.end -->
-       </div> <!-- panel.end -->
-     </div> <!-- col-md-9.end -->
-   </div> <!-- main.view.row.end -->
+          <table class="table table-striped table-hover">
+            <tr>
+              <th>Item</th>
+              <th>Product no.</th>
+              <th>Quantity</th>
+              <th>Timestamp</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Samsung Galaxy S6</td>
+              <td>MP-16-155785</td>
+              <td>4</td>
+              <td>5:15:22 March 9, 2017</td>
+              <td><a class="btn btn-default" href="#">View Details</a></td>
+            </tr>
+            <td>i3 Laptop</td>
+            <td>LS-45-745582</td>
+            <td>2</td>
+            <td>3:55:14 March 9, 2017</td>
+            <td><a class="btn btn-default" href="#">View Details</a></td>
+          </tr>
+          <tr>
+            <td>Canon Camera</td>
+            <td>BW-45-742452</td>
+            <td>3</td>
+            <td>2:45:21 March 9, 2017</td>
+            <td><a class="btn btn-default" href="#">View Details</a></td>
+          </tr>
+        </table>
+        <!-- Pagination -->
+        <div class="text-center"> <!-- text-center.pagination.start -->
+          <ul class="pagination">
+            <li class="disabled">
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </div> <!-- text-center.pagination.end -->
+      </div> <!-- panel.body.end -->
+    </div> <!-- recent.inventories.panel.end -->
+  </div> <!-- col-md-9.end -->
+</div> <!-- main.view.row.end -->
 </body>
 </html>

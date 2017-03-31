@@ -32,6 +32,10 @@ a:hover, a:focus {
     border-radius: 0;
 }
 
+#navbar-header {
+  border-color: #fff;
+}
+
 .navbar-nav > li > a, .navbar-brand {
     padding-top: 6px !important;
     padding-bottom: 0 !important;
@@ -39,15 +43,15 @@ a:hover, a:focus {
 }
 
 .navbar-default {
-  background-color: #2E2528;
-  border-color: #171012;
+  background-color: #607D8B; /* primary color */
+  border: none;
 }
 .navbar-default .navbar-brand {
   color: #ecf0f1;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #8d777e;
+  color: #e5c69a;
 }
 .navbar-default .navbar-text {
   color: #ecf0f1;
@@ -57,18 +61,18 @@ a:hover, a:focus {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #8d777e;
+  color: #e5c69a;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #171012;
+  background-color: #90A4AE;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #8d777e;
+  color: #e5c69a;
   background-color: #44ad4c;
 }
 .navbar-default .navbar-toggle {
@@ -89,7 +93,7 @@ a:hover, a:focus {
   color: #ecf0f1;
 }
 .navbar-default .navbar-link:hover {
-  color: #8d777e;
+  color: #e5c69a;
 }
 
 #menu-items {
@@ -97,8 +101,8 @@ a:hover, a:focus {
 }
 
 #header {
-    background: #0f0709;
-    border-color: #171012;
+    background: #455A64;
+    border-color: #90A4AE;
     color: #ffffff;
     padding-bottom: 10px;
 }
@@ -111,7 +115,7 @@ a:hover, a:focus {
     font-weight: 400;
     line-height: 1.42857143;
     text-align: center;
-    border: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     border-radius: 4px;
 }
 
@@ -119,8 +123,8 @@ a:hover, a:focus {
   height: 180vh;
   width: 120px;
   text-align: center;
-  background-color: #2E2528;
-  border-color: #171012;
+  background-color: #607D8B;
+  border-color: #90A4AE;
 }
 
 #mainviewrow .icon-bar #view-inventory,
@@ -131,7 +135,13 @@ a:hover, a:focus {
 #mainviewrow .icon-bar #add-invoices,
 #mainviewrow .icon-bar #view-products,
 #mainviewrow .icon-bar #add-products {
-  background-color: #0f0709;
+  background-color: #455A64;
+}
+
+.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
+font-weight: 400;
+line-height: 1;
+color: #fff;
 }
 
 #chartContainer, #chartContainer2 {
@@ -160,11 +170,11 @@ a:hover, a:focus {
 }
 
 .icon-bar a:hover {
-  background-color: #171012;
+  background-color: #90A4AE;
 }
 
 .active {
-  background-color: #171012;
+  background-color: #78909C;
 }
 
 .navbar-form > #search-bar {
@@ -184,14 +194,14 @@ a:hover, a:focus {
 }
 
 .well:hover {
-  background-color: #2e2528;
+  background-color: #607D8B;
   color: #fff;
   transition: all 0.4s ease;
 }
 
 .main-color-bg {
-    background-color: #2E2528 !important;
-    border-color: #171012 !important;
+    background-color: #607D8B !important;
+    border-color: #90A4AE !important;
     color: #ffffff !important;
 }
 
@@ -210,8 +220,8 @@ a:hover, a:focus {
 .pagination > .active > span,
 .pagination > .active > span:focus,
 .pagination > .active > span:hover {
-  background-color: #2E2528;
-  border-color: #171012;
+  background-color: #607D8B;
+  border-color: #90A4AE;
 }
 
 
@@ -221,12 +231,12 @@ a:hover, a:focus {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #8d777e;
+    color: #e5c69a;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #8d777e;
+    color: #e5c69a;
     background-color: #44ad4c;
   }
 }
