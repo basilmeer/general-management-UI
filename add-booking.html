@@ -44,77 +44,105 @@
     </div>
   </header>
 
-   <!-- Side bar -->
-   <div class="row" id="mainviewrow"> <!-- mainviewrow.start -->
-     <div class="col-md-1"> <!-- mainviewrow.col.start -->
-       <div class="icon-bar"> <!-- icon-bar.start -->
-         <a href="index.html" id="home"><i class="fa fa-dashboard"></i><span id="bar-item">&nbsp;&nbsp;Dashboard</span></a>
-         <a href="#" id="inventory"><i class="fa fa-barcode"></i><span id="bar-item">&nbsp;&nbsp;Inventory</span></a>
-           <!-- inventory tree-view -->
-           <a href="view-inventory.html" id="view-inventory"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
-           <a href="add-inventory.html" id="add-inventory"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
-         <a href="history.html" id="history"><i class="fa fa-files-o"></i><span id="bar-item">&nbsp;&nbsp;History</span></a>
-         <a class="active" href="#" id="booking"><i class="fa fa-book"></i><span id="bar-item">&nbsp;&nbsp;Booking</span></a>
-           <!-- booking tree-view -->
-           <a href="view-booking.html" id="view-booking"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
-           <a href="add-booking.html" id="add-booking"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
-         <a href="#" id="invoices"><i class="fa fa-file-text-o"></i><span id="bar-item">&nbsp;&nbsp;Invoices</span></a>
-           <!-- invoices tree-view -->
-           <a href="view-invoices.html" id="view-invoices"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
-           <a href="add-invoices.html" id="add-invoices"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
-         <!-- <a href="#" id="products"><i class="fa fa-tag"></i><span id="bar-item">&nbsp;&nbsp;Products</span></a> -->
-           <!-- products tree-view -->
-           <!-- <a href="view-products.html" id="view-products"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
-           <a href="add-products.html" id="add-products"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a> -->
-       </div>
-     </div> <!-- side.bar.end -->
+  <!-- Side bar -->
+  <div class="row" id="mainviewrow"> <!-- mainviewrow.start -->
+    <div class="col-md-1"> <!-- mainviewrow.col.start -->
+      <div class="icon-bar"> <!-- icon-bar.start -->
+        <a href="index.html" id="home"><i class="fa fa-dashboard"></i><span id="bar-item">&nbsp;&nbsp;Dashboard</span></a>
+        <a href="#" id="inventory"><i class="fa fa-barcode"></i><span id="bar-item">&nbsp;&nbsp;Inventory</span></a>
+        <!-- inventory tree-view -->
+        <a href="view-inventory.html" id="view-inventory"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+        <a href="add-inventory.html" id="add-inventory"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+        <a href="history.html" id="history"><i class="fa fa-files-o"></i><span id="bar-item">&nbsp;&nbsp;History</span></a>
+        <a class="active" href="#" id="booking"><i class="fa fa-book"></i><span id="bar-item">&nbsp;&nbsp;Booking</span></a>
+        <!-- booking tree-view -->
+        <a href="view-booking.html" id="view-booking"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+        <a href="add-booking.html" id="add-booking"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+        <a href="#" id="invoices"><i class="fa fa-file-text-o"></i><span id="bar-item">&nbsp;&nbsp;Invoices</span></a>
+        <!-- invoices tree-view -->
+        <a href="view-invoices.html" id="view-invoices"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+        <a href="add-invoices.html" id="add-invoices"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a>
+        <!-- <a href="#" id="products"><i class="fa fa-tag"></i><span id="bar-item">&nbsp;&nbsp;Products</span></a> -->
+        <!-- products tree-view -->
+        <!-- <a href="view-products.html" id="view-products"><i class="fa fa-eye"></i><span id="bar-item">&nbsp;&nbsp;View</span></a>
+        <a href="add-products.html" id="add-products"><i class="fa fa-plus"></i><span id="bar-item">&nbsp;&nbsp;Add</span></a> -->
+      </div>
+    </div> <!-- side.bar.end -->
 
-     <div class="col-md-9 col-md-offset-1">
-       <div class="panel panel-default"> <!-- panel.start -->
-         <div class="panel-body"> <!-- panel.body.start -->
-           <form> <!-- add.booking.form.start -->
-             <div class="form-group`"> <!-- client.name.form.group.start -->
-               <label for="clientName">Client Name</label>
-               <input type="text" class="form-control" id="clientName" placeholder="Enter name here">
-             </div> <!-- client.name.form.group.end -->
-             <div class="row"> <!-- booking.details.row.start -->
-             <div class="col-md-4"> <!-- start.date.start -->
-                 <div class="form-group">
-                   <label for="startDate">Date</label>
-                   <input type="text" class="form-control" id="datepicker" placeholder="Enter start date">
-                 </div>
-               </div> <!-- start.date.end -->
-               <div class="col-md-4"> <!-- due.date.start -->
-                 <div class="form-group">
-                   <label for="endDate">Time</label>
-                   <input type="text" class="form-control" id="dueDate" placeholder="Enter due date">
-                 </div>
-               </div> <!-- due.date.end -->
-               <div class="col-md-4"> <!-- currency.select.start -->
-                 <div class="form-group">
-                   <label for="currency">Location</label>
-                   <select class="form-control">
-                     <option>Office</option>
-                     <option>Office 2</option>
-                     <option>Office 3</option>
-                     <option>Office 4</option>
-                   </select>
-                 </div>
-               </div> <!-- currency.select.end -->
-             </div> <!-- booking.details.row.end -->
-          </form> <!-- add.booking.form.end -->
+    <div class="col-md-9 col-md-offset-1">
+      <div class="panel panel-default"> <!-- panel.start -->
+        <div class="panel-body"> <!-- panel.body.start -->
+          <form> <!-- form.start -->
+            <div class="form-group`"> <!-- client.name.form.group.start -->
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Enter first name here">
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Enter last name here">
+                </div>
+              </div>
+            </div> <!-- client.name.form.group.end -->
+            <div class="row"> <!-- booking.details.row.start -->
+              <div class="col-md-4"> <!-- date.start -->
+                <div class="form-group">
+                  <label for="startDate">Date</label>
+                  <input type="text" class="form-control" id="datepicker" placeholder="Enter start date">
+                </div>
+              </div> <!-- date.end -->
+              <div class="col-md-4"> <!-- time.start -->
+                <div class="form-group">
+                  <label for="endDate">Time</label>
+                  <input type="text" class="form-control" id="dueDate" placeholder="Enter due date">
+                </div>
+              </div> <!-- time.end -->
+              <div class="col-md-4"> <!-- hall.dropdown.start -->
+                <div class="form-group">
+                  <label for="currency">Hall</label>
+                  <select class="form-control">
+                    <option>Hall 1</option>
+                    <option>Hall 2</option>
+                    <option>Hall 3</option>
+                    <option>Hall 4</option>
+                  </select>
+                </div>
+              </div>  <!-- hall.dropdown.end -->
+            </div> <!-- booking.details.row.end -->
+          </form> <!-- form.end -->
           <div class="form-group">
-            <label for="invDesc">Description</label>
-            <textarea class="form-control" id="invDesc" rows=5></textarea>
+            <label for="address">Address</label>
+            <textarea class="form-control" id="address" rows=5></textarea>
           </div>
+          <!-- Dropdown menu -->
           <div class="form-group">
-            <label for="addNote">Additional Note</label>
-            <textarea class="form-control" id="addNote" rows=5></textarea>
+            <label for="currency">Menu</label>
+            <select class="form-control">
+              <option>Chicken - Qorma / Karahi, Chicken - Biryani / Palaoi, Variety of Roghni Nan (Live), Dahi Raita, Fresh Salad, Firni, Kheer, Zarda, Fruit Triffle, Cold Drink, Round Table</option>
+              <option>Mutton - Qorma / Karahi, Chicken - Biryani / Palao, Variety of Roghni Nan (Live), Dahi Raita, Fresh Salad, Firni, Kheer, Zarda, Fruit Triffle, Cold Drink, Round Table</option>
+              <option>Halwa Suji, Poori / Pathoray, Chana Bhaji, Chicken Masala Biryani, Podina Chatni, Achar, Cold Drink, Mehndi Setting</option>
+              <option>Beef Haleem, White Rice, Fresh Salad, Variety of Roghni Nan (Live), Firni, Kheer, Zarda, Fruit Triffle, Cold Drink, Round Table</option>
+            </select>
+          </div>
+          <!-- Set Menu Checkboxes -->
+          <label for="set-menu">Set Menu</label>
+          <div class="row">
+            <div class="col-md-4">
+              Cold Drink:<br>
+              Mineral Water:<br>
+              Kashmiri Tea:
+            </div>
+            <div class="col-md-4">
+              <label>@ Rs. 30/-</label>&nbsp;&nbsp;<input type="checkbox" value=""><br>
+              <label>@ Rs. 20/-</label>&nbsp;&nbsp;<input type="checkbox" value=""><br>
+              <label>@ Rs. 35/-</label>&nbsp;&nbsp;<input type="checkbox" value="">
+            </div>
           </div>
           <button type="submit" class="btn btn-success pull-right">Submit</button>
-         </div> <!-- panel-body.end -->
-       </div> <!-- panel.end -->
-     </div> <!-- col-md-9.end -->
+        </div> <!-- panel-body.end -->
+      </div> <!-- panel.end -->
+    </div> <!-- col-md-9.end -->
   </div> <!-- sale end -->
 </body>
 </html>

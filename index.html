@@ -20,7 +20,7 @@
 
   <!-- NavBar = The thing at the top of the page that lets you navigate around -->
   <nav class="navbar navbar-default"> <!-- nav.bar.start -->
-    <div class="container-fluid">
+    <div class="container-fluid"> <!-- container-fluid.start -->
       <!-- This works when the screen's small; doesn't 'work' the way it's intended to, though. Will fix later. -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,30 +33,27 @@
       </div> <!-- Small menu icon ends here -->
 
       <!-- Actual nav-bar that you see at the top of a screen on a normal screen -->
-      <div id="navbar" class="collapse navbar-collapse">
+      <div id="navbar" class="collapse navbar-collapse"> <!-- nav.bar.start -->
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Welcome, User</a></li>
           <li><a href="signin.html">Logout</a></li>
         </ul>
       </div>
-    </div>
+    </div> <!-- container-fluid.end -->
   </nav> <!-- nav.bar.end -->
 
-  <!-- Displays the name of the page
-  and a short description -->
+  <!-- Header -->
   <header id="header"> <!-- header.start -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10">
+    <div class="container"> <!-- container.start -->
+      <div class="row"> <!-- row.start -->
+        <div class="col-md-10"> <!-- col-md-10.start -->
           <h2><span class="fa fa-dashboard" aria-hidden="true"></span> Dashboard <small>Manage Your Site</small></h2>
-        </div>
-      </div>
-    </div>
+        </div> <!-- col-md-10.end -->
+      </div> <!-- row.end -->
+    </div> <!-- container.end -->
   </header> <!-- header.end -->
 
-  <!-- Side bar = lets you navigate around different pages,
-  kinda the same thing as the navbar except
-  filles up space really nicely -->
+  <!-- Side bar -->
   <div class="row" id="mainviewrow"> <!-- main.view.row.start -->
     <div class="col-md-1"> <!-- main.view.col.start -->
       <div class="icon-bar"> <!-- icon-bar.start -->
