@@ -89,18 +89,18 @@
               <div class="col-md-4"> <!-- date.start -->
                 <div class="form-group">
                   <label for="startDate">Date</label>
-                  <input type="text" class="form-control" id="datepicker" placeholder="Enter start date">
+                  <input type="text" class="form-control" id="datepicker" placeholder="Enter date">
                 </div>
               </div> <!-- date.end -->
               <div class="col-md-4"> <!-- time.start -->
                 <div class="form-group">
-                  <label for="endDate">Time</label>
-                  <input type="text" class="form-control" id="dueDate" placeholder="Enter due date">
+                  <label for="endDate">No. of Guests</label>
+                  <input type="text" class="form-control" id="dueDate" placeholder="Enter no. of guests">
                 </div>
               </div> <!-- time.end -->
               <div class="col-md-4"> <!-- hall.dropdown.start -->
                 <div class="form-group">
-                  <label for="currency">Hall</label>
+                  <label for="hall">Hall</label>
                   <select class="form-control">
                     <option>Hall 1</option>
                     <option>Hall 2</option>
@@ -117,9 +117,9 @@
           </div>
           <!-- Dropdown menu -->
           <div class="form-group">
-            <label for="currency">Menu</label>
+            <label for="menu">Menu</label>
             <select class="form-control">
-              <option>Chicken - Qorma / Karahi, Chicken - Biryani / Palaoi, Variety of Roghni Nan (Live), Dahi Raita, Fresh Salad, Firni, Kheer, Zarda, Fruit Triffle, Cold Drink, Round Table</option>
+              <option>Chicken - Qorma / Karahi, Chicken - Biryani / Palao, Variety of Roghni Nan (Live), Dahi Raita, Fresh Salad, Firni, Kheer, Zarda, Fruit Triffle, Cold Drink, Round Table</option>
               <option>Mutton - Qorma / Karahi, Chicken - Biryani / Palao, Variety of Roghni Nan (Live), Dahi Raita, Fresh Salad, Firni, Kheer, Zarda, Fruit Triffle, Cold Drink, Round Table</option>
               <option>Halwa Suji, Poori / Pathoray, Chana Bhaji, Chicken Masala Biryani, Podina Chatni, Achar, Cold Drink, Mehndi Setting</option>
               <option>Beef Haleem, White Rice, Fresh Salad, Variety of Roghni Nan (Live), Firni, Kheer, Zarda, Fruit Triffle, Cold Drink, Round Table</option>
@@ -127,18 +127,20 @@
           </div>
           <!-- Set Menu Checkboxes -->
           <label for="set-menu">Set Menu</label>
-          <div class="row">
-            <div class="col-md-4">
+          <div class="row"> <!-- row.start -->
+            <div class="col-md-4"> <!-- col-md-4.start -->
               Cold Drink:<br>
               Mineral Water:<br>
-              Kashmiri Tea:
-            </div>
-            <div class="col-md-4">
+              Kashmiri Tea:<br>
+              5% withholding Tax:<br>
+              5% PRA Tax:
+            </div> <!-- col-md-4.end -->
+            <div class="col-md-4"> <!-- col-md-4.start -->
               <label>@ Rs. 30/-</label>&nbsp;&nbsp;<input type="checkbox" value=""><br>
               <label>@ Rs. 20/-</label>&nbsp;&nbsp;<input type="checkbox" value=""><br>
               <label>@ Rs. 35/-</label>&nbsp;&nbsp;<input type="checkbox" value="">
-            </div>
-          </div>
+            </div> <!-- col-md-4.end -->
+          </div> <!-- row.end -->
           <button type="submit" class="btn btn-success pull-right">Submit</button>
         </div> <!-- panel-body.end -->
       </div> <!-- panel.end -->
