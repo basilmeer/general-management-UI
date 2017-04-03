@@ -14,7 +14,6 @@
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
 
   <link rel="icon" href="images/fav.ico"> <!-- Adds locally stored favicon -->
@@ -89,130 +88,145 @@
     <div class="col-md-9 col-md-offset-1">
       <div class="panel panel-default"> <!-- panel.start -->
         <div class="panel-body"> <!-- panel.body.start -->
-          <form> <!-- form.start -->
-            <div class="form-group`"> <!-- client.name.form.group.start -->
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="firstName">First Name</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="Enter first name here">
-                </div>
-                <div class="col-md-6">
-                  <label for="lastName">Last Name</label>
-                  <input type="text" class="form-control" id="lastName" placeholder="Enter last name here">
-                </div>
-              </div>
-            </div> <!-- client.name.form.group.end -->
-            <div class="row"> <!-- booking.details.row.start -->
-              <div class="col-md-4"> <!-- date.start -->
-                <div class="form-group">
-                  <label for="startDate">Phone Number</label>
-                  <input type="tel" max="15" class="form-control" id="phonenumber" placeholder="0300 1234567" />
-                </div>
-              </div> <!-- date.end -->
-              <div class="col-md-4"> <!-- time.start -->
-                <div class="form-group">
-                  <label for="endDate">CNIC</label>
-                  <input type="text" class="form-control" id="CNIC" placeholder="35202-xxxxxxx-x">
-                </div>
-              </div> <!-- time.end -->
-            </div> <!-- booking.details.row.end -->
-          </form> <!-- form.end -->
-          <div class="form-group">
-            <label for="address">Address</label>
-            <textarea class="form-control" id="address" rows=5></textarea>
-          </div>
-          <!-- Dropdown menu -->
-          <div class="form-group">
-           <div class="row"> <!-- booking.details.row.start -->
-              <div class="col-md-4"> <!-- date.start -->
-                <div class="form-group">
-                  <label for="startDate">Function Name</label>
-                  <input type="text" class="form-control" id="FunctionName" placeholder="Mehndi" />
-                </div>
-              </div> <!-- date.end -->
-              <div class="col-md-4">
-                <form id="dateRangeForm" method="post" class="form-horizontal"> <!-- time.start -->
-                  <div class="form-group">
-                   <label for="endDate">Date</label>
-                      <div class="input-group input-append date" id="dateRangePicker">
-                       <input type="text" class="form-control" name="date" />
-                       <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
-                      </div>
+    
+             <form> <!-- form.start -->
+                <div class="row">
+                   <div class="col-md-6">
+                    <div class="form-group"> <!-- client.name.form.group.start -->
+                       <label for="firstName">First Name</label>
+                       <input type="text" class="form-control" id="firstName" placeholder="Enter first name here">
+                    </div>
+                   </div>
+                  <div class="col-md-6">
+                    <div class="form-group"> <!-- client.name.form.group.start -->
+                      <label for="lastName">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="Enter last name here">
+                    </div>
+                  </div> 
+                </div> <!-- client.name.form.group.end -->
+                <div class="row"> <!-- booking.details.row.start -->
+                 <div class="col-md-6"> <!-- Phone Number.start -->
+                   <div class="form-group">
+                     <label for="startDate">Phone Number</label>
+                     <input type="tel" max="15" class="form-control" id="phonenumber" placeholder="0300 1234567" />
+                   </div>
+                 </div> <!-- PhoneNumber.end -->
+                 <div class="col-md-6"> <!-- CNIC.start -->
+                    <div class="form-group">
+                      <label for="endDate">CNIC</label>
+                      <input type="text" class="form-control" id="CNIC" placeholder="35202-xxxxxxx-x">
                   </div>
-              </div> <!-- time.end -->
-              <div class="col-md-4"> <!-- hall.dropdown.start -->
-                <div class="form-group">
-                  <label for="currency">Hall</label>
-                  <select class="form-control">
-                    <option>Hall 1</option>
-                    <option>Hall 2</option>
-                    <option>Hall 3</option>
-                    <option>Hall 4</option>
-                  </select>
-                </div>
-              </div>  <!-- hall.dropdown.end -->
+                </div> <!-- CNIC.end -->
+              </div> <!-- booking.details.row.end -->
+            </form> <!-- form.end -->
+            <div class="form-group">
+              <label for="address">Address</label>
+              <textarea class="form-control" id="address" rows=5></textarea>
             </div>
-                  <!--Menu 4 end-->
-             </div>
+            <!-- Dropdown menu -->
+            <div class="form-group">
+             <div class="row"> <!-- booking.details.row.start -->
+                <div class="col-md-4"> <!-- FunctionName.start -->
+                  <div class="form-group">
+                    <label for="startDate">Function Name</label>
+                    <input type="text" class="form-control" id="FunctionName" placeholder="Mehndi" />
+                  </div>
+                </div> <!-- Function.Name end -->
+                <div class="col-md-4"> <!-- No. of Guests.start -->
+                  <div class="form-group">
+                    <label for="startDate">Number Of Guests</label>
+                    <input type="number" class="form-control" id="Guests" placeholder="No. of Guests" />
+                  </div>
+                </div> <!-- No. of Guests end -->
+                <div class="col-md-4"> <!-- hall.dropdown.start -->
+                  <div class="form-group">
+                    <label for="currency">Hall</label>
+                    <select class="form-control">
+                      <option>Hall 1</option>
+                      <option>Hall 2</option>
+                      <option>Hall 3</option>
+                      <option>Hall 4</option>
+                    </select>
+                  </div>
+                </div>  <!-- hall.dropdown.end -->
+              </div>
+              <div class="row"> <!-- booking.details.row.start -->
+                <div class="col-md-4"> <!-- date.start -->
+                  <div class="form-group">
+                    <label for="startDate">Phone Number</label>
+                    <input type="tel" max="15" class="form-control" id="phonenumber" placeholder="0300 1234567" />
+                  </div>
+                </div> <!-- date.end -->
+                <div class="col-md-4"><!-- Date.Start -->
+                  <form id="dateRangeForm" method="post" class="form-horizontal"> 
+                    <div class="form-group">
+                     <label for="endDate">Date</label>
+                        <div class="input-group input-append date" id="dateRangePicker">
+                         <input type="text" class="form-control" name="date" />
+                         <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                        </div>
+                    </div>
+                </div> <!-- Date.end --> <!-- time.end -->
+              </div> <!-- booking.details.row.end -->
+                    <!--Menu 4 end-->
+               </div>
+              <hr>  
+            <!-- Set Menu Checkboxes -->
+            <label for="set-menu">Set Menu</label>
+            <div class="row">
+              <div class="col-md-4">
+                Cold Drink:<br>
+                Mineral Water:<br>
+                Kashmiri Tea:
+              </div>
+              <div class="col-md-4">
+                <label>@ Rs. 30/-</label>&nbsp;&nbsp;<input type="checkbox" value=""><br>
+                <label>@ Rs. 20/-</label>&nbsp;&nbsp;<input type="checkbox" value=""><br>
+                <label>@ Rs. 35/-</label>&nbsp;&nbsp;<input type="checkbox" value="">
+              </div>
             </div>
-            <hr>  
-          </div>
-          <!-- Set Menu Checkboxes -->
-          <label for="set-menu">Set Menu</label>
-          <div class="row">
-            <div class="col-md-4">
-              Cold Drink:<br>
-              Mineral Water:<br>
-              Kashmiri Tea:
-            </div>
-            <div class="col-md-4">
-              <label>@ Rs. 30/-</label>&nbsp;&nbsp;<input type="checkbox" value=""><br>
-              <label>@ Rs. 20/-</label>&nbsp;&nbsp;<input type="checkbox" value=""><br>
-              <label>@ Rs. 35/-</label>&nbsp;&nbsp;<input type="checkbox" value="">
-            </div>
-          </div>
-          <button type="submit" class="btn btn-success pull-right">Submit</button>
-        </div> <!-- panel-body.end -->
-      </div> <!-- panel.end -->
-    </div> <!-- col-md-9.end -->
-  </div> <!-- sale end -->
-        <script>
-$(document).ready(function() {
-    $('#dateRangePicker')
-        .datepicker({
-            format: 'mm/dd/yyyy',
-            startDate: '01/01/2010',
-            endDate: '12/30/2020'
-        })
-        .on('changeDate', function(e) {
-            // Revalidate the date field
-            $('#dateRangeForm').formValidation('revalidateField', 'date');
-        });
+            <button type="submit" class="btn btn-success pull-right" href="google.com">Submit</button>
+          </div> <!-- panel-body.end -->
+        </div> <!-- panel.end -->
+      </div> <!-- col-md-9.end -->
+    </div> <!-- sale end -->
+  <script>
+    $(document).ready(function() {
+        $('#dateRangePicker')
+            .datepicker({
+                format: 'mm/dd/yyyy',
+                startDate: '01/01/2010',
+                endDate: '12/30/2020'
+            })
+            .on('changeDate', function(e) {
+               // Revalidate the date field
+                $('#dateRangeForm').formValidation('revalidateField', 'date');
+            });
 
-    $('#dateRangeForm').formValidation({
-        framework: 'bootstrap',
-        icon: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            date: {
-                validators: {
-                    notEmpty: {
-                        message: 'The date is required'
-                    },
-                    date: {
-                        format: 'MM/DD/YYYY',
-                        min: '01/01/2010',
-                        max: '12/30/2020',
-                        message: 'The date is not a valid'
+        $('#dateRangeForm').formValidation({
+            framework: 'bootstrap',
+            icon: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                date: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The date is required'
+                        },
+                        date: {
+                            format: 'MM/DD/YYYY',
+                            min: '01/01/2010',
+                            max: '12/30/2020',
+                            message: 'The date is not a valid'
+                        }
                     }
                 }
             }
-        }
+        });
     });
-});
-</script>
-</body>
-</html>
+  </script>
+  </body>
+  </html>
