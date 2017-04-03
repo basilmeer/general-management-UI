@@ -89,18 +89,18 @@
               <div class="col-md-4"> <!-- date.start -->
                 <div class="form-group">
                   <label for="startDate">Date</label>
-                  <input type="text" class="form-control" id="datepicker" placeholder="Enter date">
+                  <input type="text" class="form-control" id="datepicker" placeholder="Enter start date">
                 </div>
               </div> <!-- date.end -->
               <div class="col-md-4"> <!-- time.start -->
                 <div class="form-group">
-                  <label for="endDate">No. of Guests</label>
-                  <input type="text" class="form-control" id="dueDate" placeholder="Enter no. of guests">
+                  <label for="endDate">Time</label>
+                  <input type="text" class="form-control" id="dueDate" placeholder="Enter due date">
                 </div>
               </div> <!-- time.end -->
               <div class="col-md-4"> <!-- hall.dropdown.start -->
                 <div class="form-group">
-                  <label for="hall">Hall</label>
+                  <label for="currency">Hall</label>
                   <select class="form-control">
                     <option>Hall 1</option>
                     <option>Hall 2</option>
@@ -117,30 +117,225 @@
           </div>
           <!-- Dropdown menu -->
           <div class="form-group">
-            <label for="menu">Menu</label>
-            <select class="form-control">
-              <option>Chicken - Qorma / Karahi, Chicken - Biryani / Palao, Variety of Roghni Nan (Live), Dahi Raita, Fresh Salad, Firni, Kheer, Zarda, Fruit Triffle, Cold Drink, Round Table</option>
-              <option>Mutton - Qorma / Karahi, Chicken - Biryani / Palao, Variety of Roghni Nan (Live), Dahi Raita, Fresh Salad, Firni, Kheer, Zarda, Fruit Triffle, Cold Drink, Round Table</option>
-              <option>Halwa Suji, Poori / Pathoray, Chana Bhaji, Chicken Masala Biryani, Podina Chatni, Achar, Cold Drink, Mehndi Setting</option>
-              <option>Beef Haleem, White Rice, Fresh Salad, Variety of Roghni Nan (Live), Firni, Kheer, Zarda, Fruit Triffle, Cold Drink, Round Table</option>
-            </select>
+            <label for="currency">Menu</label><br>
+             <!-- Menu Section 1 and 3 -->
+             <div>
+               <input type="radio" name="Menu" value="Menu 1" checked> 
+                  <strong>Menu 1</strong><br>
+                  &emsp;&emsp; <strong>Dish 1</strong><br>
+                   &emsp; &emsp; &emsp; 
+                    <select name="Dish 1 Menu1">
+                        <option value="volvo">Chicken - Qorma</option>
+                        <option value="saab">Chicken - Karahi</option>
+                    </select>
+                  <br>
+                  &emsp;&emsp; <strong>Dish 2</strong><br>
+                   &emsp; &emsp; &emsp; <select name="Dish 2 Menu1">
+                        <option value="volvo">Chicken - Biryani</option>
+                        <option value="saab">Chicken - Palao</option>
+                    </select>
+                  <br>
+                  &emsp; &emsp; Variety of Roghni nan (Live)
+                  <br>
+                  &emsp; &emsp; Dahi Raita
+                  <br>
+                  &emsp; &emsp; Fresh Salad
+                  <br>
+                  &emsp; &emsp; <strong>Sweet Dish</strong><br>
+                  &emsp; &emsp; &emsp; <select name="Sweet Dish Menu1">
+                        <option value="volvo">Firni</option>
+                        <option value="saab">Kheer</option>
+                        <option value="saab">Zarda</option>
+                        <option value="saab">Fruit Triffle</option>
+                    </select>
+                  <br>
+                  &emsp;&emsp; Cold Drink, Round Table<br>
+                  &emsp; &emsp; <strong>Add To Menu</strong><br>
+                  &emsp; &emsp; &emsp; <select name="Add To Menu Menu1">
+                        <option value="volvo">Mutton Kunna        -  Rs. 7000/- Per Chatti</option>
+                        <option value="saab">Mutton Joint         -  Rs. 400/- Per Head</option>
+                        <option value="saab">Mutton Palak         -  Rs. 200/- Per Head</option>
+                        <option value="saab">Mutton Qorma         -  Rs. 450/- Per Head</option>
+                        <option value="saab">Chicken Qorma        -  Rs. 150/- Per Head</option>
+                        <option value="saab">Chicken Steam Roast  -  Rs. 200/- Per Head</option>
+                        <option value="saab">Chicken Kabab (Bar-B-Q)   -  Rs. 200/- Per Head</option>
+                        <option value="saab">FKabab beef   -  Rs. 150/- Per Head</option>
+                        <option value="saab">Beef Haleem   -  Rs. 8000/- Per Deg</option>
+                        <option value="saab">Fried Fish   -  Rs. 350/- Per Head</option>
+                        <option value="saab">Halwa Pori and Aloo Chanay   -  Rs. 125/- Per Head</option>
+                        <option value="saab">Qulfa   -  Rs. 80/- Per Head</option>
+                        <option value="saab">Chutnee Aloo Bkhara   -  Rs. 50/- Per Head</option>
+                        <option value="saab">Soup of your choice   -  Rs. 60/- Per Head</option>
+                        <option value="saab">Jasmine Qahwa   -  Rs. 20/- Per Head</option>
+                        <option value="saab">Russian Salad/Bean/Macroni   -  Rs. 70/- Per Head</option>
+                        <option value="saab">Juice (Shezan)   -  Rs. 50/- Per Head</option>
+                        <option value="saab">Halwa Gajar/Petha   -  Rs. 95/- Per Head</option>
+                    </select>
+                  <br><br>
+                  <!-- Menu 1 End-->
+
+
+               <!--Menu 3-->
+               <input type="radio" name="gender" value="female"> 
+                  <strong>Menu 3</strong><br>
+                  &emsp;&emsp; Halwa Suji
+                  <br>
+                  &emsp;&emsp; <strong>Dish 1</strong><br>
+                   &emsp; &emsp; &emsp; <select name="Dish 1 Menu3">
+                        <option value="Poori">Poori</option>
+                        <option value="Pathoray">Pathoray</option>
+                    </select>
+                  <br>
+                  <br>
+                  &emsp;&emsp; Chana Bhaji
+                  <br>
+                  &emsp;&emsp; Chicken Masala Biryani
+                  <br>
+                  &emsp;&emsp; Podina Chatni, Achar
+                  <br>
+                  &emsp;&emsp; Cold Drink, Mehndi Setting<br>
+                  &emsp; &emsp; <strong>Add To Menu</strong><br>
+                  &emsp; &emsp; &emsp; <select name="Add To Menu Menu3">
+                        <option value="volvo">Mutton Kunna        -  Rs. 7000/- Per Chatti</option>
+                        <option value="saab">Mutton Joint         -  Rs. 400/- Per Head</option>
+                        <option value="saab">Mutton Palak         -  Rs. 200/- Per Head</option>
+                        <option value="saab">Mutton Qorma         -  Rs. 450/- Per Head</option>
+                        <option value="saab">Chicken Qorma        -  Rs. 150/- Per Head</option>
+                        <option value="saab">Chicken Steam Roast  -  Rs. 200/- Per Head</option>
+                        <option value="saab">Chicken Kabab (Bar-B-Q)   -  Rs. 200/- Per Head</option>
+                        <option value="saab">FKabab beef   -  Rs. 150/- Per Head</option>
+                        <option value="saab">Beef Haleem   -  Rs. 8000/- Per Deg</option>
+                        <option value="saab">Fried Fish   -  Rs. 350/- Per Head</option>
+                        <option value="saab">Halwa Pori and Aloo Chanay   -  Rs. 125/- Per Head</option>
+                        <option value="saab">Qulfa   -  Rs. 80/- Per Head</option>
+                        <option value="saab">Chutnee Aloo Bkhara   -  Rs. 50/- Per Head</option>
+                        <option value="saab">Soup of your choice   -  Rs. 60/- Per Head</option>
+                        <option value="saab">Jasmine Qahwa   -  Rs. 20/- Per Head</option>
+                        <option value="saab">Russian Salad/Bean/Macroni   -  Rs. 70/- Per Head</option>
+                        <option value="saab">Juice (Shezan)   -  Rs. 50/- Per Head</option>
+                        <option value="saab">Halwa Gajar/Petha   -  Rs. 95/- Per Head</option>
+                    </select>
+                  <br>
+                  <!--Menu 3 end-->
+             </div>
+             <!-- Menu Section 2 and 4 -->
+             <div class="menu-right"> 
+               <input type="radio" name="gender" value="other"> 
+                  <!--Menu 2-->
+                  <strong>Menu 2</strong><br>
+                  <!-- Dish 1 -->
+                  &emsp;&emsp; <strong>Dish 1</strong><br>
+                    &emsp; &emsp;&emsp; 
+                    <select name="Dish 1 Menu2">
+                        <option value="volvo">Mutton - Qorma</option>
+                        <option value="saab">Mutton - Karahi</option>
+                    </select>
+                  <br>
+                  <!--Dish 2 -->
+                  &emsp; &emsp;<strong>Dish 2</strong><br>
+                    &emsp; &emsp; &emsp;<select name="Dish 2 Menu2">
+                        <option value="volvo">Chicken - Biryani</option>
+                        <option value="saab">Chicken - Palao</option>
+                    </select>
+                  <br>
+                  &emsp; &emsp;Variety of Roghni nan (Live)
+                  <br>
+                  &emsp;&emsp; Dahi Raita
+                  <br>
+                  &emsp;&emsp; Fresh Salad
+                  <br>
+                  &emsp;&emsp; <strong>Sweet Dish</strong><br>
+                  <!--Sweet Dish Menu 2 Dropdown Menu-->
+                  &emsp;&emsp; &emsp; <select name="Sweet Dish Menu2">
+                        <option value="volvo">Firni</option>
+                        <option value="saab">Kheer</option>
+                        <option value="saab">Zarda</option>
+                        <option value="saab">Fruit Triffle</option>
+                    </select>
+                  <br>
+                  &emsp;&emsp; Cold Drink, Round Table<br>
+                  &emsp; &emsp; <strong>Add To Menu</strong><br>
+                  &emsp; &emsp; &emsp; <select name="Add To Menu Menu3">
+                        <option value="volvo">Mutton Kunna        -  Rs. 7000/- Per Chatti</option>
+                        <option value="saab">Mutton Joint         -  Rs. 400/- Per Head</option>
+                        <option value="saab">Mutton Palak         -  Rs. 200/- Per Head</option>
+                        <option value="saab">Mutton Qorma         -  Rs. 450/- Per Head</option>
+                        <option value="saab">Chicken Qorma        -  Rs. 150/- Per Head</option>
+                        <option value="saab">Chicken Steam Roast  -  Rs. 200/- Per Head</option>
+                        <option value="saab">Chicken Kabab (Bar-B-Q)   -  Rs. 200/- Per Head</option>
+                        <option value="saab">FKabab beef   -  Rs. 150/- Per Head</option>
+                        <option value="saab">Beef Haleem   -  Rs. 8000/- Per Deg</option>
+                        <option value="saab">Fried Fish   -  Rs. 350/- Per Head</option>
+                        <option value="saab">Halwa Pori and Aloo Chanay   -  Rs. 125/- Per Head</option>
+                        <option value="saab">Qulfa   -  Rs. 80/- Per Head</option>
+                        <option value="saab">Chutnee Aloo Bkhara   -  Rs. 50/- Per Head</option>
+                        <option value="saab">Soup of your choice   -  Rs. 60/- Per Head</option>
+                        <option value="saab">Jasmine Qahwa   -  Rs. 20/- Per Head</option>
+                        <option value="saab">Russian Salad/Bean/Macroni   -  Rs. 70/- Per Head</option>
+                        <option value="saab">Juice (Shezan)   -  Rs. 50/- Per Head</option>
+                        <option value="saab">Halwa Gajar/Petha   -  Rs. 95/- Per Head</option>
+                    </select>
+                  <br><br>
+                  <!--Menu 2 end-->
+               <input type="radio" name="gender" value="other"> 
+                  <!--Menu 4 -->
+                  <strong>Menu 4</strong><br>
+                  &emsp; &emsp;Beef Haleem
+                  <br>
+                  &emsp; &emsp;White Rice
+                  <br>
+                  &emsp;&emsp; Fresh Salad
+                  <br>
+                  &emsp; &emsp;Variety of Roghni nan (Live)
+                  <br>
+                  &emsp;&emsp; <strong>Sweet Dish</strong><br>
+                  &emsp;&emsp; &emsp; <select name="Sweet Dish Menu4">
+                        <option value="volvo">Firni</option>
+                        <option value="saab">Kheer</option>
+                        <option value="saab">Zarda</option>
+                        <option value="saab">Fruit Triffle</option>
+                    </select>
+                  <br>
+                  &emsp;&emsp; Cold Drink, Round Table<br>
+                  &emsp; &emsp; <strong>Add To Menu</strong><br>
+                  &emsp; &emsp; &emsp; <select name="Add To Menu Menu3">
+                        <option value="volvo">Mutton Kunna        -  Rs. 7000/- Per Chatti</option>
+                        <option value="saab">Mutton Joint         -  Rs. 400/- Per Head</option>
+                        <option value="saab">Mutton Palak         -  Rs. 200/- Per Head</option>
+                        <option value="saab">Mutton Qorma         -  Rs. 450/- Per Head</option>
+                        <option value="saab">Chicken Qorma        -  Rs. 150/- Per Head</option>
+                        <option value="saab">Chicken Steam Roast  -  Rs. 200/- Per Head</option>
+                        <option value="saab">Chicken Kabab (Bar-B-Q)   -  Rs. 200/- Per Head</option>
+                        <option value="saab">FKabab beef   -  Rs. 150/- Per Head</option>
+                        <option value="saab">Beef Haleem   -  Rs. 8000/- Per Deg</option>
+                        <option value="saab">Fried Fish   -  Rs. 350/- Per Head</option>
+                        <option value="saab">Halwa Pori and Aloo Chanay   -  Rs. 125/- Per Head</option>
+                        <option value="saab">Qulfa   -  Rs. 80/- Per Head</option>
+                        <option value="saab">Chutnee Aloo Bkhara   -  Rs. 50/- Per Head</option>
+                        <option value="saab">Soup of your choice   -  Rs. 60/- Per Head</option>
+                        <option value="saab">Jasmine Qahwa   -  Rs. 20/- Per Head</option>
+                        <option value="saab">Russian Salad/Bean/Macroni   -  Rs. 70/- Per Head</option>
+                        <option value="saab">Juice (Shezan)   -  Rs. 50/- Per Head</option>
+                        <option value="saab">Halwa Gajar/Petha   -  Rs. 95/- Per Head</option>
+                    </select>
+                  <br>
+                  <!--Menu 4 end-->
+             </div> 
           </div>
           <!-- Set Menu Checkboxes -->
           <label for="set-menu">Set Menu</label>
-          <div class="row"> <!-- row.start -->
-            <div class="col-md-4"> <!-- col-md-4.start -->
+          <div class="row">
+            <div class="col-md-4">
               Cold Drink:<br>
               Mineral Water:<br>
-              Kashmiri Tea:<br>
-              5% withholding Tax:<br>
-              5% PRA Tax:
-            </div> <!-- col-md-4.end -->
-            <div class="col-md-4"> <!-- col-md-4.start -->
+              Kashmiri Tea:
+            </div>
+            <div class="col-md-4">
               <label>@ Rs. 30/-</label>&nbsp;&nbsp;<input type="checkbox" value=""><br>
               <label>@ Rs. 20/-</label>&nbsp;&nbsp;<input type="checkbox" value=""><br>
               <label>@ Rs. 35/-</label>&nbsp;&nbsp;<input type="checkbox" value="">
-            </div> <!-- col-md-4.end -->
-          </div> <!-- row.end -->
+            </div>
+          </div>
           <button type="submit" class="btn btn-success pull-right">Submit</button>
         </div> <!-- panel-body.end -->
       </div> <!-- panel.end -->

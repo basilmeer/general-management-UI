@@ -162,9 +162,9 @@ color: #fff;
 }
 
 #calendar {
-		max-width: 900px;
-		margin: 0 auto;
-	}
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
 
 #bar-item {
@@ -244,3 +244,11 @@ color: #fff;
     background-color: #44ad4c;
   }
 }
+
+.menu-right{
+  position: relative;
+  left: 512px;
+  bottom: 504px;
+
+}
+  
